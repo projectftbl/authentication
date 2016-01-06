@@ -1,0 +1,3 @@
+## @ftbl/authentication
+
+Authentication helpers.
