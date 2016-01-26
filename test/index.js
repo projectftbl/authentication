@@ -1,6 +1,6 @@
 var chai = require('chai')
   , should = chai.should()
-  , bcrypt = require('bcrypt')
+  , bcrypt = require('bcrypt-nodejs')
   , sut = require('../lib');
 
 describe('When using the Authenticator service', function() {
