@@ -127,26 +127,6 @@ describe('When using the Authenticator service', function() {
         suite.matches.should.be.false;
       });
     });
-
-    describe('When authenticating with a missing password', function() {
-      before(function() {
-        suite.matches = sut.authenticate(suite.hashedPassword);
-      });
-
-      it('should not match', function() {
-        suite.matches.should.be.false;
-      });
-    });
-
-    describe('When authenticating with no parameters', function() {
-      before(function() {
-        suite.matches = sut.authenticate();
-      });
-
-      it('should not match', function() {
-        suite.matches.should.be.false;
-      });
-    });
   });
 
 });
