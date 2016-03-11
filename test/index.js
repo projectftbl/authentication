@@ -127,6 +127,16 @@ describe('When using the Authenticator service', function() {
         suite.matches.should.be.false;
       });
     });
+
+    describe('When authenticating with an empty password', function() {
+      before(function() {
+        suite.matches = sut.authenticate(null, 'dummy');
+      });
+
+      it('should not match', function() {
+        suite.matches.should.be.false;
+      });
+    });
   });
 
 });
