@@ -1,3 +1,3 @@
-## @ftbl/authentication
+## @recipher/authentication
 
 Authentication helpers.
